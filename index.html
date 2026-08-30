@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <title>Lilla</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Georgia, "Times New Roman", serif;
+        color: #19241f;
+        background: #f5f1e8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        background-color: #f5f1e8;
+        background-image: radial-gradient(circle at 15% 15%, rgba(174, 103, 66, 0.12), transparent 28%);
+      }
+
+      main {
+        width: min(960px, 100%);
+        border: 1px solid #c8c0b1;
+        background: #fbf9f4;
+        padding: clamp(32px, 7vw, 80px);
+        box-shadow: 12px 12px 0 #31483d;
+      }
+
+      .eyebrow {
+        margin: 0 0 24px;
+        color: #925337;
+        font: 700 0.78rem/1.2 system-ui, sans-serif;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 700px;
+        margin: 0;
+        font-size: clamp(3.5rem, 11vw, 8.5rem);
+        font-weight: 400;
+        line-height: 0.85;
+        letter-spacing: -0.07em;
+      }
+
+      .summary {
+        max-width: 610px;
+        margin: 40px 0 0;
+        font: 400 clamp(1.05rem, 2vw, 1.3rem)/1.65 system-ui, sans-serif;
+        color: #435048;
+      }
+
+      footer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 56px;
+        font: 600 0.82rem/1.4 system-ui, sans-serif;
+        letter-spacing: 0.04em;
+      }
+
+      .status {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #2d6f4e;
+        box-shadow: 0 0 0 5px rgba(45, 111, 78, 0.12);
+      }
+
+      @media (max-width: 540px) {
+        body { padding: 20px; }
+        main { padding: 32px 24px; box-shadow: 7px 7px 0 #31483d; }
+        footer { margin-top: 40px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Alloy development environment</p>
+      <h1>Lilla is ready.</h1>
+      <p class="summary">
+        A clean starting point for building the Lilla experience. The application is running in Docker and configured for reliable Alloy sessions.
+      </p>
+      <footer><span class="status" aria-hidden="true"></span> Development server online</footer>
+    </main>
+  </body>
+</html>
